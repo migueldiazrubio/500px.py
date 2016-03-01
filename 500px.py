@@ -19,7 +19,7 @@ if args.term and args.size and args.results and args.path:
     consumer_key = "PON_AQUI_TU_CONSUMER_KEY"
     photos_search_endpoint = "https://api.500px.com/v1/photos/search?"
 
-    url = photos_search_endpoint + "consumer_key=" + consumer_key + "&term=" + term + "&image_size=" + size + "&rpp=" + results + "&sort=rating&exclude=Nude"
+    url = photos_search_endpoint + "consumer_key=" + consumer_key + "&term=" + term + "&image_size=" + size + "&rpp=" + results + "&exclude=Nude"
 
     response = requests.get(url)
 
